@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+    <html lang="es">
+        <head>
+
+            <meta charset="UTF-8" />
+            <title>Expocisiones</title>
+            <link rel="stylesheet" href="estilo.css">
+            <link rel="icon" href="logo.jpg" type="image/x-icon">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+        <style>
+        .contenedor-imagenes {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .imagen {
+            flex: 1;
+            max-width: 20%;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s, box-shadow 0.3s;
+            object-fit: cover;
+        }
+
+        .imagen:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 100px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            overflow: auto;
+        }
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 50%;
+            max-width: 350px;
+            max-height: 80%;
+            object-fit: contain;
+            ali
+        }
+
+        .button {
+            background: linear-gradient(140.14deg, #040a5a 15.05%, #2f09d6 114.99%)
+            padding-box,
+            linear-gradient(142.51deg, #364dce 8.65%, #030f7e 88.82%) border-box;
+            border-radius: 7px;
+            border: 2px solid transparent;
+            text-shadow: 1px 1px 1px #412d2d40;
+            box-shadow: 8px 8px 20px 0px #5b30be59;
+            justify-content: center; 
+            padding: 10px 40px;
+            line-height: 20px;
+            cursor: pointer;
+            transition: all 0.3s;
+            color: white;
+            font-size: 18px;
+            font-weight: 500;
+            text-decoration: none;
+        }
+
+        .button:hover {
+            box-shadow: none;
+            opacity: 80%;
+            justify-content: center; 
+        }
+
+        .contenedor {
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+            height: 7vh; 
+        }
+
+        .contenido {
+            display: ;
+            justify-content: center;
+            align-items: center;
+            padding-top: ;
+            flex-wrap: wrap;
+            background-image: url(Papel.png);
+            width: auto;
+            margin-top: 0px;
+            top:0;
+        }
+
+        .cerrar {
+            color: #fff;
+            font-size: 30px;
+            font-weight: bold;
+            position: absolute;
+            top: 10px;
+            right: 25px;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .cerrar:focus {
+            color: #bbb;
+        }
+
+        .boton-cerrar {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #f44336;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .boton-cerrar:hover {
+            background-color: #d32f2f;
+        }
+
+        </style>
+
+        </head>
+
+        <body>
+            <div class="contenido">
+                <nav>
+                    <a href="#" class="logo">
+                        <img src="logo.jpg" alt="Logo de la página">
+                    </a>
+                <ul>
+                    <li><a href="index.html" class="beautiful-button">Inicio</a></li>
+                    <li><a href="sobrenosotros.html" class="beautiful-button">Sobre Nosotros</a></li>
+                    <li><a href="museo.html" class="beautiful-button">Exposiciones</a></li>
+                    <li><a href="contacto.html" class="beautiful-button">Contacto</a></li>
+                </ul>
+                </nav>
+            </div>
+
+            <div class="contenido">
+                <div class="contenedor-imagenes">
+                    <img src="pintura8.jpg" alt="Imagen 1" class="imagen" onclick="mostrarImagen(this)">
+                    <img src="pintura9.jpg" alt="Imagen 2" class="imagen" onclick="mostrarImagen(this)">
+                    <img src="pintura10.jpg" alt="Imagen 1" class="imagen" onclick="mostrarImagen(this)">
+                    <img src="pintura11.jpg" alt="Imagen 2" class="imagen" onclick="mostrarImagen(this)">
+                </div>
+
+                <div class="contenedor-imagenes">
+                    <img src="pintura12.jpg" alt="Imagen 1" class="imagen" onclick="mostrarImagen(this)">
+                    <img src="pintura1.jpg" alt="Imagen 2" class="imagen" onclick="mostrarImagen(this)">
+                    <img src="pintura2.jpg" alt="Imagen 1" class="imagen" onclick="mostrarImagen(this)">
+                    <img src="libro1.jpg" alt="Imagen 2" class="imagen" onclick="mostrarImagen(this)">
+                </div>
+
+                </div>
+
+                <div id="miModal" class="modal">
+                    <span class="cerrar" onclick="cerrarModal()">&times;</span>
+                        <img class="modal-content" id="imgModal">
+                    <a class="contenedor"><button class="button" onclick="cerrarModal()">Cerrar</button></a>
+                </div>
+
+        <script>
+            function mostrarImagen(img) {
+                var modal = document.getElementById("miModal");
+                var modalImg = document.getElementById("imgModal");
+                modal.style.display = "block";
+                modalImg.src = img.src;
+            }
+
+            function cerrarModal() {
+                var modal = document.getElementById("miModal");
+                modal.style.display = "none";
+            }
+        </script>
+
+        <footer class="footer">
+            <div class="footer-bottom">
+                &copy; 2024 DORÉ | Todos los derechos reservados
+            </div>
+        </footer>
+
+</html>

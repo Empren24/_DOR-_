@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+    <html lang="es">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="estilo.css">
+            <link rel="icon" href="logo.jpg" type="image/x-icon">
+            <title>Contacto</title>
+
+        <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            width: 100%; 
+            height: 100vh; 
+            background: #ffffff; 
+            overflow: hidden;
+        }
+
+        .contenido {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: ;
+            flex-wrap: wrap;
+            background-color: #ffffff; 
+            width: 100%;
+            margin-top: 0px;
+        }
+
+        .form-container {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: rgb(0, 0, 0);
+            padding: 30px;
+            width: 100%;
+            max-width: 600px;
+            text-align: center;
+            margin-right: 20px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #000000;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .input-group label {
+            font-size: 0.9rem;
+            color: #000000; 
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .input-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+            color: #000000;
+            background-color: #f9f9f9;
+            transition: all 0.3s ease;
+        }
+
+        .input-group textarea:focus {
+            border-color: #03284e;
+            background-color: #fff;
+            outline: none;
+        }
+
+        textarea {
+            resize: vertical;
+            height: 150px;
+        }
+
+        .submit-btn {
+            padding: 12px 20px;
+            border: none;
+            background-color: #003164;
+            color: #fff;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background-color: #ffffff;
+        }
+
+        .submit-btn:active {
+            background-color: #003f7f;
+        }
+
+        @media (max-width: 768px) {
+            .contenido {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .form-container {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+
+        .button {
+            font-family: "Lexend", sans-serif;
+            background: linear-gradient(140.14deg, #040a5a 15.05%, #2f09d6 114.99%) padding-box,
+                        linear-gradient(142.51deg, #364dce 8.65%, #030f7e 88.82%) border-box;
+            border-radius: 7px;
+            border: 2px solid transparent;
+            text-shadow: 1px 1px 1px #412d2d40;
+            box-shadow: 8px 8px 20px 0px #5b30be59;
+            padding: 10px 40px;
+            line-height: 20px;
+            cursor: pointer;
+            transition: all 0.3s;
+            color: white;
+            font-size: 18px;
+            font-weight: 500;
+            text-decoration: none;
+            font-family: "Lexend", sans-serif;
+        }
+
+        .button:hover {
+            box-shadow: none;
+            opacity: 80%;
+        }
+
+        .image-container {
+            max-width: 400px;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        
+        </style>
+
+        </head>
+        <body>
+                <br>
+            <div class="container">
+                <nav>
+                    <a href="#" class="logo">
+                        <img src="logo.jpg" alt="Logo de la página">
+                    </a>
+                    <ul>
+                        <li><a href="index.html" class="beautiful-button">Inicio</a></li>
+                        <li><a href="sobrenosotros.html" class="beautiful-button">Sobre Nosotros</a></li>
+                        <li><a href="museo.html" class="beautiful-button">Exposiciones</a></li>
+                        <li><a href="contacto.html" class="beautiful-button">Contacto</a></li>
+                    </ul>
+                </nav>
+
+                <div class="contenido">
+                    <div class="form-container">
+                        <h2>Contacto</h2>
+                            <form action="#" method="POST" class="contact-form">
+                    <div class="input-group">
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                    </div>
+        
+                    <div class="input-group">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" id="email" name="email" placeholder="Tu correo" required>
+                    </div>
+        
+                    <div class="input-group">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" name="message" placeholder="Escribe tu mensaje" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="button">Enviar</button>
+                </form>
+            </div>
+
+                    <div class="image-container">
+                     <img src="Icon.jpg" alt="Imagen de contacto">
+                    </div>
+            </div>
+            </div>
+
+         <footer class="footer">
+            <div class="footer-bottom">
+            &copy; 2024 DORÉ | Todos los derechos reservados
+            </div>
+        </footer>
+
+</html>

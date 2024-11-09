@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+    <html>
+
+        <head>
+            <meta charset="UTF-8" />
+            <title>Sobre Nosotros</title>
+            <link rel="stylesheet" href="estilo.css">
+            <link rel="icon" href="logo.jpg" type="image/x-icon">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+        </head>
+        <body>
+            <style>
+                body{
+                background-image: url(Papel.png); 
+                background-size: cover; 
+                font-family: "Lexend", sans-serif;
+                background-repeat: no-repeat; 
+            }
+            
+            .contenido{
+                background-image: url(Papel.png);
+            }
+
+            .contenedor {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 50px; 
+                padding: 90px;
+                font-family: Arial, sans-serif;
+            }
+
+            .bloque {
+                max-width:max-content;
+                background-color: #ffffff; 
+                border-left: 5px solid #0e005f; 
+                padding: 10px 30px; 
+                border-radius: px; 
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); 
+                transition: transform 0.3s, box-shadow 0.3s; 
+            }
+
+            .bloque:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); 
+            }
+
+            .bloque h2 {
+                color: #0e005f; 
+                margin-bottom: 10px;
+                font-size: 24px;
+                font-family: "Lexend", sans-serif;
+            }
+
+            .bloque p {
+                color: #000000; 
+                line-height: 1.6;
+                font-size: 16px;
+                font-family: "Lexend", sans-serif;
+            }
+       
+            .contenedor-imagenes {
+                display: flex; 
+                justify-content: space-between; 
+                gap: 20px; 
+                padding: 20px;
+            }
+
+            .imagen {
+                flex: 1; 
+                max-width: 20%; 
+                border-radius: 10px; 
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); 
+                transition: transform 0.3s, box-shadow 0.3s; 
+                object-fit: cover; 
+            }
+
+            .imagen:hover {
+                transform: scale(1.05); 
+                box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25); 
+            }
+            </style>
+            
+            <nav>
+                <a href="#" class="logo">
+                    <img src="logo.jpg" alt="Logo de la página">
+                </a>
+                <ul>
+                    <li><a href="index.html" class="beautiful-button">Inicio</a></li>
+                    <li><a href="sobrenosotros.html" class="beautiful-button">Sobre Nosotros</a></li>
+                    <li><a href="museo.html" class="beautiful-button">Exposiciones</a></li>
+                    <li><a href="contacto.html" class="beautiful-button" >Contacto</a></li>
+                </ul>
+            </nav>
+
+            <div class="contenido">
+    
+                <div class="bloque">
+                <h2>Quiénes Somos</h2>
+                <p>Somos una empresa dedicada a la promoción y admiración de obras de arte; nos mueve el deseo de impulsar a los artistas y 
+                hacerlos crecer de una manera exponencial. En esta plataforma encontrarás un espacio pintado por obras artísticas e 
+                innovadoras. Podrás admirar, inspirarte e incluso comprar el arte de los demás; además, si te gusta dedicarte a lo 
+                artístico, puedes subir tus propios blogs u obras de arte para que los demás puedan apreciarlo. ¡Somos un museo virtual!</p>
+            </div>
+
+                <div class="bloque">
+                <h2>Visión</h2>
+                <p>Ser un espacio de arte líder en El Salvador, ayudando e impulsando a artistas nacionales a tener éxito; además de generar 
+                una perspectiva diferente del arte para demostrar las diversas oportunidades de crecer artísticamente y crear así un impacto 
+                positivo en la población.</p>
+            </div>
+
+                <div class="bloque">
+                <h2>Misión</h2>
+                <p>Proporcionar a los artistas una plataforma en la cual puedan dar a conocer su arte y a su vez puedan encontrar oportunidades 
+                de crecimiento para maximizar su conocimiento y éxito. Al mismo tiempo, poder desarrollar un lugar seguro para que nuestros 
+                usuarios puedan adquirir y observar piezas y obras de arte por medio de un recurso innovador.</p>
+            </div>
+
+            </div>
+        </body>
+
+        <footer class="footer">
+
+            <div class="footer-bottom">
+                &copy; 2024 DORÉ | Todos los derechos reservados
+            </div>
+
+        </footer>
+    
+</html>
